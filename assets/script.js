@@ -31,7 +31,7 @@ function clearCanvas() {
 // Load pre-trained TensorFlow.js model
 let model;
 async function loadModel() {
-    model = await tf.loadLayersModel("https://YOUR_MODEL_URL/model.json");
+    model = await tf.loadLayersModel("https://storage.googleapis.com/tfjs-models/tfjs/mnist/model.json");
     console.log("Model Loaded!");
 }
 loadModel();
